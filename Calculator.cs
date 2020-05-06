@@ -30,5 +30,11 @@ namespace Calculator
             }    
 
         }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Display.Text += button.Text;
+        }
     }
 }
